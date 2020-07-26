@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtUsername" />
 
 
-    <CheckBox
+    <!--<CheckBox
         android:id="@+id/chkStayLogged"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
         android:text="@string/login_stay_logged"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />-->
 
     <Button
         android:id="@+id/btnLogin"
@@ -65,7 +65,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/chkStayLogged" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
 
     <TextView
         android:id="@+id/tevLinkSignup"
@@ -74,12 +74,32 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="40dp"
+        android:onClick="btnSignup"
         android:text="@string/signup_login"
         android:textAlignment="center"
         android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+    <TextView
+        android:id="@+id/tevLinkRecoveryPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="btnSignup"
+        android:text="@string/recovery_pwd_login"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tevLinkSignup" />
     <include layout="@layout/include_progress_overlay"/>
 
 

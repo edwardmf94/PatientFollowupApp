@@ -15,7 +15,7 @@
         <activity android:name=".view.RecipientsActivity" />
         <activity android:name=".view.PatientFileActivity" />
         <activity android:name=".view.PatientActivity" />
-        <activity android:name=".view.SignupActivity" />
+        <activity android:name=".view.SignupActivity" android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".view.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar">

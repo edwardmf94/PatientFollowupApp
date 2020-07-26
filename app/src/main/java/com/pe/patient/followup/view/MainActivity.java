@@ -1,5 +1,6 @@
 package com.pe.patient.followup.view;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
@@ -40,6 +41,12 @@ public class MainActivity extends AppCompatActivity implements MainActivityView,
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+
+        SharedPreferences settings = getSharedPreferences("iafas_pref", Context.MODE_PRIVATE);
+        String get_username = settings.getString("login_username", "");
+        String get_token = settings.getString("login_token", "");
+        Log.i("leer username", String.valueOf(get_username));
+        Log.i("leer token", String.valueOf(get_token));
     }
 
     @Override

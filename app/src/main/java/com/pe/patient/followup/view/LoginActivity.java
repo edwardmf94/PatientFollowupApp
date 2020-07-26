@@ -2,6 +2,7 @@ package com.pe.patient.followup.view;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,19 +30,22 @@ public class LoginActivity extends AppCompatActivity implements LoginActivityVie
         setContentView(R.layout.activity_login);
         edtUsername = (EditText) findViewById(R.id.edtUsername);
         edtPassword = (EditText) findViewById(R.id.edtPassword);
-        chkStayLogged = (CheckBox) findViewById(R.id.chkStayLogged);
+        //chkStayLogged = (CheckBox) findViewById(R.id.chkStayLogged);
+
+        SharedPreferences settings = getSharedPreferences("iafas_pref", Context.MODE_PRIVATE);
+
 
         progressOverlay = findViewById(R.id.progress_overlay);
-        presenter = new LoginActivityPresenterImpl(this);
+        presenter = new LoginActivityPresenterImpl(this, settings);
         presenter.setProgressBarVisiblity(View.INVISIBLE);
     }
 
     public void btnLogin(View view){
         String username = edtUsername.getText().toString();
         String password = edtPassword.getText().toString();
-        Boolean stay_logged = chkStayLogged.isChecked();
+        //Boolean stay_logged = chkStayLogged.isChecked();
         presenter.setProgressBarVisiblity(View.VISIBLE);
-        presenter.doLogin(username,password,stay_logged, this.getApplicationContext());
+        presenter.doLogin(username,password,true, this.getApplicationContext());
     }
 
     public void btnSignup(View view){

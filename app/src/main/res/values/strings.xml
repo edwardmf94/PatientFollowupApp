@@ -30,6 +30,7 @@
     <string name="toolbar_patient_recipients_activity">Beneficiarios</string>
     <string name="toolbar_drugstore_orders_activity">Entrega de medicamentos</string>
     <string name="signup_login">Registrar nuevo paciente</string>
+    <string name="recovery_pwd_login">Olvide mi contraseña</string>
     <string-array name="patient_gender">
         <item>Genero</item>
         <item>Masculino</item>
