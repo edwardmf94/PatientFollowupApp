@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">PatientFollowup</string>
+    <string name="title_activity_login">Iniciar sesión</string>
+    <string name="login_username">CIP Usuario</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="login_stay_logged">Permanecer logueado</string>
+    <string name="menu_item_edit_patient">Modificar datos de paciente</string>
+    <string name="menu_item_new_file">Nueva Ficha</string>
+    <string name="menu_item_recipients">Beneficiarios</string>
+    <string name="menu_item_order_status">Estado de entrega</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="signup">Crear Cuenta</string>
+    <string name="repeat_password">Repetir contraseña</string>
+    <string name="signup_helptext">Después deberá commpletar su registro llenando sus datos como paciente crónico</string>
+    <string name="patient_address">Dirección</string>
+    <string name="patient_comment">Observaciones / Referencia</string>
+    <string name="patient_save">Guardar</string>
+    <string name="patient_dni">DNI</string>
+    <string name="patient_name">Apellidos y Nombres</string>
+    <string name="patient_phone">Celular</string>
+    <string name="patient_birth_date">Fecha de nacimiento</string>
+    <string name="patient_district">Distrito</string>
+    <string name="main_toolbar_title">Seguimiento de paciente</string>
+    <string name="patient_file_department">Especialidad</string>
+    <string name="add_to_my_file">Agregar a mi ficha</string>
+    <string name="toolbar_patient_activity">Datos de Paciente</string>
+    <string name="toolbar_patient_file_activity">Renovar Ficha</string>
+    <string name="toolbar_patient_recipients_activity">Beneficiarios</string>
+    <string name="toolbar_drugstore_orders_activity">Entrega de medicamentos</string>
+    <string name="signup_login">Registrar nuevo paciente</string>
+    <string-array name="patient_gender">
+        <item>Genero</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+    <string-array name="patient_departmemnt">
+        <item>Departamento</item>
+    </string-array>
+    <string-array name="patient_province">
+        <item>Provincia</item>
+    </string-array>
+    <string-array name="patient_file_department">
+        <item>Especialidad</item>
+    </string-array>
+    <string-array name="patient_file_drugstore">
+        <item>Farmacia</item>
+    </string-array>
+    <string-array name="patient_file_primary_diagnosis">
+        <item>Diagnostico principal</item>
+    </string-array>
+</resources>
