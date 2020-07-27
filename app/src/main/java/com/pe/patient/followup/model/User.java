@@ -2,6 +2,7 @@ package com.pe.patient.followup.model;
 
 public class User {
     private String username;
+    private String password;
     private String token;
 
     public String getUsername() {
@@ -18,5 +19,13 @@ public class User {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

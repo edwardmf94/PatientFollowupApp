@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RecipientsActivityInteractorImpl implements RecipientsActivityInteractor {
-    RecipientsActivityPresenter presenter;
+    private RecipientsActivityPresenter presenter;
 
     public RecipientsActivityInteractorImpl(RecipientsActivityPresenter presenter) {
         this.presenter = presenter;
